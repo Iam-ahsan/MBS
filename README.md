@@ -26,3 +26,27 @@ Our updated [model and lambda package](https://drive.google.com/drive/folders/1R
 - To print the help, try: _python MBS_solver.py --help_
 - To run the solver, try: _python MBS_solver.py --model TF-inceptionV4 --percentile 0.95 --slo 0.00003 --constraint cost --trace Twitter --start 1 --end 1_
 ---
+
+**Run Experiments**
+Usage:
+python Clustering_BATCH2_Client.py
+- Run experiment with default  Exponential arrival python Clustering_BATCH2_Client.py. This file takes the following argunments as command line argunments.
+    1.num_classes # number of buffers
+    2. num_requests # Intreger value that depicts the number of request types in the workload
+    3. class_id # ID of the buffer a request is assigned to
+    4. batch_size # optimal batch size calculated through MBS_soler.py
+    5. t_out # optimal timeout calculated through MBS_soler.py
+    6. interval # interval from the twitter traces ( integer between 0 and 23)
+    7 allocated_memory # optimal memory calculated through MBS_soler.py
+    
+    **Run model**
+- Model takes the arrival process i.e. inter-arrival time to calculate the efficient memory size, batch size, batch timeout and optimal number of buffers. 
+-----
+**Collect logs**
+- Once the experiments are done three log files are generated for each buffer for within experiment.
+  1. Lambda logs: These logs contains all the information regarding each lambda invocation i.e. print out values in the lambda function, init time, execution time, billing time, memory utilization, exceptions if any and error if any.
+  2. Lambda per buffer per batch logs: These logs contains information regardin batch i.e. Batch starting time, Batch ending time, Batch size and Batch serivce time for a particular buffer.
+  3. Lmabda per buffer pre request logs: This file contains all the information of each request i.e. arrival time, departure time, latency, and size of batch it was served in for a particular bufffer.
+  
+  
+  **All log are collected through cloudwatch default configurations**
