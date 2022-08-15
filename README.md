@@ -24,7 +24,7 @@ Our updated [model and lambda package](https://drive.google.com/drive/folders/1R
    4. scipy
    5. ortools
 - To print the help, try: _python MBS_solver.py --help_
-- To run the solver, try: _python MBS_solver.py --model TF-inceptionV4 --percentile 0.95 --slo 0.00003 --constraint cost --trace Twitter --start 1 --end 1_
+- To run the solver, try: _python MBS_solver.py  --percentile 0.95 --slo 0.00003 --constraint cost --trace Twitter --start 1 --end 1_
 ---
 
 **Run Experiments**
