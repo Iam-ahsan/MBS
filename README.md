@@ -16,13 +16,13 @@ To deploy the Lambda serverless function follow the instruction in the [How to d
 Our updated [model and lambda package](https://drive.google.com/drive/folders/1R5eJ-dQZDmTU45-YBj1CJyiYWsExTWvN?usp=sharing) supports batching. The batching enabled lambda packge can be deployed by following the same steps mentioned in the demo and just by replacing the model file and packge file. We use Tensorflow 1.8 in our packge. At the time of our experiments this was the most latest Tensorflow version which could be zipped to 50 MB (Lambda limitation). 
 
 **Find optimal configuration**
-- To find the optimal configuration of the serverless environment, run the _solver.py_ python script.
-- _solver.py_ must be run with python3 and requires the following modules:
+- To find the optimal configuration of the serverless environment, run the ./model/MBS_solver.py python script.
+- MBS_solver.py_ must be run with python3 and requires the following modules:
    1. argparse
    2. numpy
    3. matplotlib
    4. scipy
    5. ortools
-- To print the help, try: _python solver.py --help_
-- To run the solver, try: _python solver.py --model TF-inceptionV4 --percentile 0.95 --slo 0.00003 --constraint cost --trace Twitter --start 1 --end 1_
+- To print the help, try: _python MBS_solver.py --help_
+- To run the solver, try: _python MBS_solver.py --model TF-inceptionV4 --percentile 0.95 --slo 0.00003 --constraint cost --trace Twitter --start 1 --end 1_
 ---
