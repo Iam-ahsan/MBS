@@ -9,7 +9,7 @@ MBS: Optimizing Inference Serving on Serverless Platforms
 - [Pandas](https://github.com/pandas-dev/pandas)
 - [Scipy](https://docs.scipy.org/doc/scipy/getting_started.html)
 - [Bayesian Optimization](https://github.com/fmfn/BayesianOptimization.git)
--[KPC-Toolbox](https://github.com/kpctoolboxteam/kpc-toolbox.git)
+- [KPC-Toolbox](https://github.com/kpctoolboxteam/kpc-toolbox.git)
 ---
 **Deployment:**
 
