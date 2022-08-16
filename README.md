@@ -6,6 +6,9 @@ MBS: Optimizing Inference Serving on Serverless Platforms
 
 - [AWS  Cli](https://aws.amazon.com/cli/)
 - [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+- [Pandas](https://github.com/pandas-dev/pandas)
+- [Scipy](https://docs.scipy.org/doc/scipy/getting_started.html)
+- [Bayesian Optimization](https://github.com/fmfn/BayesianOptimization.git)
 
 ---
 **Deployment:**
